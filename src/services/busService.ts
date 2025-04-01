@@ -1,5 +1,5 @@
 const URL_BASE = 'http://localhost:8080';
-const ENCABEZADO_AUTORIZACION = 'Basic ' + btoa('user:4b176ea6-64c0-44cf-8b51-09612da9e2a2');
+const ENCABEZADO_AUTORIZACION = 'Basic ' + btoa('user:f34a31a5-b3d5-42a6-a568-020c8ced9ef7'); // Reemplazar con tu token de autorización real.
 
 // Función para obtener la lista de buses con paginación
 export async function obtenerBuses(pagina: number, tamano: number) {
