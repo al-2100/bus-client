@@ -40,3 +40,88 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Estilos para la aplicación de buses */
+.contenedor-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-fondo);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-tabla-buses {
+  margin-top: 2rem;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-tabla-buses h2 {
+  color: #000000;
+}
+
+.tabla-buses {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-buses th {
+  background-color: var(--fondo-encabezado-tabla);
+  color: var(--color-encabezado-tabla);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+}
+
+.tabla-buses td {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  color: var(--color-texto);
+}
+
+.tabla-buses tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabla-buses tr:hover {
+  background-color: var(--fondo-fila-hover);
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.paginacion button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-primario);
+  background-color: var(--color-primario);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.paginacion button:hover {
+  background-color: var(--color-secundario);
+}
+
+.paginacion button:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
